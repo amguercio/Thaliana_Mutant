@@ -1,18 +1,6 @@
-#!/bin/bash -l
-
-#SBATCH --nodes=1
-#SBATCH --ntasks=10
-#SBATCH --mem-per-cpu=40G
-#SBATCH --time=2-00:15:00     # 2 days and 15 minutes
-#SBATCH --output=my.stdout
-#SBATCH --mail-user=guercioa@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH --job-name="dl"
-#SBATCH -p koeniglab
-
 ##Download reference into reference-index-specific folder
 
-##gunzip it
+##gunzip reference.fa.gz
 
 
 ##	##Indexing Reference for BWA Mem##	##

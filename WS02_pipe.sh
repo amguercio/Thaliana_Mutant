@@ -14,17 +14,10 @@
 
 
 
-##Ws-0.2    CS78857 RUS     52.3    30      Albert Kranz    Mott    SRR1945924
-#ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/004/SRR1945924/SRR1945924_1.fastq.gz
-#ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/004/SRR1945924/SRR1945924_2.fastq.gz
-##This will be called WS02 from now on
-
-
-## Need:
-##/rhome/guercioa/bigdata/thaliana_JGCRZ/reads_files
+##Files are from ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/004/SRR1945924
+##1001 genomes proj. Descriptor: Ws-0.2    CS78857 RUS     52.3    30      Albert Kranz    Mott    SRR1945924
 ##SRR1945924_1.fastq.gz                 (WS02)
 ##SRR1945924_2.fastq.gz                 (WS02)
-
 
 
 

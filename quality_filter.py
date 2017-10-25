@@ -12,7 +12,7 @@
 
 
 
-##Row 5 of vcf's = quality
+##Row 5 of vcfs = quality
 
 
 

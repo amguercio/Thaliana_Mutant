@@ -13,18 +13,10 @@
 ##WS2_pipe##
 
 
-
-##Ws-2      CS78920 RUS     52.3    30      Kenneth Feldmann        MPI,Salk        SRR1945798
-#ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/008/SRR1945798/SRR1945798_1.fastq.gz
-#ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/008/SRR1945798/SRR1945798_2.fastq.gz
-##This will be called WS2 from now on
-
-## Need:
-##/rhome/guercioa/bigdata/thaliana_JGCRZ/reads_files
-##SRR1945798_1.fastq.gz                 (WS2)
+##Files are from ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR194/008/SRR1945798
+##1001 genomes proj. Descriptor: Ws-2      CS78920 RUS     52.3    30      Kenneth Feldmann        MPI,Salk        SRR1945798
+#SRR1945798_1.fastq.gz                 (WS2)
 ##SRR1945798_2.fastq.gz                 (WS2)
-
-
 
 
 ##	##Trimmomatic Script##  ##

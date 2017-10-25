@@ -1,20 +1,7 @@
-#!/bin/bash -l
-
-#SBATCH --nodes=1
-#SBATCH --ntasks=10
-#SBATCH --mem-per-cpu=40G
-#SBATCH --time=2-00:15:00     # 2 days and 15 minutes
-#SBATCH --output=my.stdout
-#SBATCH --mail-user=guercioa@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH --job-name="dl"
-#SBATCH -p koeniglab
-
-
 ##ExCol_pipe##
 
 ## Need:
-##/rhome/guercioa/bigdata/thaliana_JGCRZ/reads_files
+##Files are from ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR431/ERR431471
 ##ERR431471_1.fastq                 (ExCol)
 ##ERR431471_2.fastq                 (ExCol)
 

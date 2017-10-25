@@ -1,20 +1,6 @@
-#!/bin/bash -l
-
-#SBATCH --nodes=1
-#SBATCH --ntasks=10
-#SBATCH --mem-per-cpu=40G
-#SBATCH --time=2-00:15:00     # 2 days and 15 minutes
-#SBATCH --output=my.stdout
-#SBATCH --mail-user=guercioa@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH --job-name="dl"
-#SBATCH -p koeniglab
-
-
 ##JGCol_pipe##
 
-## Need:
-##/rhome/guercioa/shared/SEQ_RUNS/10_12_2017/FASTQ/illumina.bioinfo.ucr.edu/illumina_runs/718/
+##reads from experiment performed at UC Riverside by A. Guercio and J.Goff 
 ##flowcell718_lane1_pair1_TTAGGC.fastq.gz                 (JGCol)
 ##flowcell718_lane1_pair2_TTAGGC.fastq.gz                 (JGCol)
 

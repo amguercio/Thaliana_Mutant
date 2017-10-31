@@ -37,18 +37,18 @@ def chrom_finder(Infile_vcf, Chrom_num, Outfile_vcf):
 
 
 ##For JGCRZ
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf", 1, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr1.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf", 2, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr2.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf", 3, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr3.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf", 4, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr4.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf", 5, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr5.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf", 1, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr1.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf", 2, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr2.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf", 3, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr3.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf", 4, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr4.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf", 5, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCRZ_Chr5.vcf")
 
 ##For JGCol
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf", 1, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr1.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf", 2, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr2.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf", 3, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr3.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf", 4, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr4.vcf")
-chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf", 5, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr5.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf", 1, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr1.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf", 2, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr2.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf", 3, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr3.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf", 4, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr4.vcf")
+chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf", 5, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/JGCol_Chr5.vcf")
 
 ##For JGCRZJGCol Shared
 chrom_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/CRZColShared_SNPs.vcf", 1, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/SNPs_bychrom/CRZColShared_Chr1.vcf")

@@ -12,44 +12,6 @@
 
 
 
-##Isolating unique homozygous calls between two lines
-
-def uniquehomSNP_finder(Infile_vcf, columnof_homref, columnof_homalt, Outfile_vcf):
-
-        Infile=open(Infile_vcf, "r")
-        Outfile=open(Outfile_vcf, "w")
-        homref=int(columnof_homref)
-        homalt=int(columnof_homalt)
-
-
-        for line in Infile:
-                line = line.strip()
-                if line.startswith('#'):
-                        continue
-                else:
-                        parts = line.split('\t')
-                        ref = parts[homref]
-                        alt = parts[homalt]
-                        if ref.startswith("0/0") and alt.startswith("1/1"):
-                                Outfile.write(line + "\n")
-                        else: 
-                                continue
-
-        Infile.close()
-        Outfile.close()
-
-
-##Now run on Qual filtered rawsnps file for each desired line
-
-##JGCRZ Unique SNPs, JGCRZ=10 , JGCol=11
-uniquehomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 11, 10, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_unique.vcf")
-
-##JGCol Unique SNPs, JGCol= , JGCRZ= 
-uniquehomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 10, 11, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_unique.vcf")
-
-
-
-
 ##Isolating homozygous alt in desired line script
 
 def homalt_finder(Infile_vcf, columnof_line, Outfile_vcf):
@@ -77,13 +39,19 @@ def homalt_finder(Infile_vcf, columnof_line, Outfile_vcf):
 
 ##Now run on Qual filtered rawsnps file for each desired line
 
-##For ExCol, column = 
+##For JGCRZ, column = 10
+homalt_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 10, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCRZ_SNPs.vcf")
+
+##For JGCol, column = 11
+homalt_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 11, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/JGCol_SNPs.vcf")
+
+##For ExCol, column = 9
 homalt_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 9, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/ExCol_SNPs.vcf")
 
-##For WS02, column = 
+##For WS02, column = 12
 homalt_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 12, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/WS02_SNPs.vcf")
 
-##For WS2, column = 
+##For WS2, column = 13
 homalt_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 13, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/WS2_SNPs.vcf")
 
 
@@ -125,6 +93,13 @@ sharedhomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNP
 
 ##For JGCol and WS02 shared, JGCol = 11, WS2 = 13
 sharedhomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 11, 13, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/ColWS2Shared_SNPs.vcf")
+
+##For JGCRZ and WS02 shared, JGCRZ = 10, WS02 = 12
+sharedhomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 10, 12, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/CRZWS02Shared_SNPs.vcf")
+
+##For JGCRZ and WS2 shared, JGCRZ = 10, WS02 =  13
+sharedhomSNP_finder("/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/rawSNPs_Qual100.vcf", 10, 13, "/rhome/guercioa/bigdata/thaliana_JGCRZ/SNPcalls_vcfs/CRZWS2Shared_SNPs.vcf")
+
 
 
 

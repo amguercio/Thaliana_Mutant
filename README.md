@@ -49,4 +49,12 @@ Analyzing thaliana data for mutant site identification
 **SNP_densityplotsColWSShared.R** 
 * A script plotting the density of SNPs in bins per chromosome for Col, Col WS02 shared, and Col WS2 shared
    * Uses `R`
+
+**Venn_diagrams.R**
+* A script plotting both unscaled and scaled triple venn diagrams
+   * Uses `R` with `venneuler` and `VennDiagram` packages
+
+**snpEff.sh**
+* A script annotating all variants of a given vcf file
+   * Uses `snpEff`
     

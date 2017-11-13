@@ -39,12 +39,12 @@ SNPchrom_Barplot <- function(Infile, height, Line1, Line2, besideTorF) {
                   beside=besideTorF,
                   xlab = "Chromosome Number",
                   ylab= "Number of SNPs",
-                  col = c("Pink", "Light Blue")
+                  col = c("Red", "Blue")
   )
   
   legend("topleft",
          c(Line1, Line2),
-         fill = c("Pink", "Light Blue")
+         fill = c("Red", "Blue")
   )
   return(plot)
 }

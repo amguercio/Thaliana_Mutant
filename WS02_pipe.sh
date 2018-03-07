@@ -23,7 +23,7 @@
 
 ##	##Trimmomatic Script##  ##
 
-module load trimmomatic
+module load trimmomatic/0.33
 #*Keep in mind that these reads are around 50 bp each so change minlen
 java -jar /opt/linux/centos/7.x/x86_64/pkgs/trimmomatic/0.33/bin/trimmomatic.jar PE -phred33 \
 /rhome/guercioa/bigdata/thaliana_JGCRZ/reads_files/SRR1945924_1.fastq.gz \
@@ -39,8 +39,8 @@ ILLUMINACLIP:/opt/linux/centos/7.x/x86_64/pkgs/trimmomatic/0.33/adapters/TruSeq3
 
 ##	##Align + Sam -> Bam Script##   ##
 
-module load bwa
-module load samtools
+module load bwa/0.7.12
+module load samtools/1.4.1
 
 
 bwa mem -t 10 -R "@RG\tID:Columbia_Analyses\tSM:WS02\tPL:ILLUMINA" \
@@ -56,7 +56,7 @@ bwa mem -t 10 -R "@RG\tID:Columbia_Analyses\tSM:WS02\tPL:ILLUMINA" \
 
 ##	##Removing Duplicates with Picard Script##	##
 
-module load picard
+module load picard/2.10.0
 
 
 java -jar /opt/linux/centos/7.x/x86_64/pkgs/picard/2.10.0/lib/picard.jar MarkDuplicates \
@@ -71,7 +71,7 @@ TMP_DIR= /rhome/guercioa/bigdata/thaliana_JGCRZ/dupfree_alignments/tmp
 
 ##	##Indexing reads for GATK##	##
 
-module load samtools
+module load samtools/1.4.1
 
 
 samtools index /rhome/guercioa/bigdata/thaliana_JGCRZ/dupfree_alignments/WS02_dupfree.bam
@@ -81,7 +81,7 @@ samtools index /rhome/guercioa/bigdata/thaliana_JGCRZ/dupfree_alignments/WS02_du
 
 ##	##GATK Realign Around Indels Script##	##
 
-module load gatk
+module load gatk/3.7
 
 
 ##First use realigner target creator

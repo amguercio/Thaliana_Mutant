@@ -16,7 +16,7 @@
 
 ##	##SNP Calling with GATK##	##
 
-module load gatk
+module load gatk/3.7
 
 java -jar /opt/linux/centos/7.x/x86_64/pkgs/gatk/3.7/GenomeAnalysisTK.jar \
 -nt 10 \

@@ -5,33 +5,33 @@ Analyzing thaliana data for mutant site identification
 
 **Indexing_Reference.sh** 
 * Includes all scripts for indexing A.thaliana reference to `.amb, .ann, .bwt, .pac, .sa, .dict, .fai` file types
-    * Uses `bwa` `picard` and `samtools`
+    * Uses `bwa/0.7.12` `picard/2.10.0` and `samtools/1.4.1`
     * These are necessary for both `bwa` and `GATK` downstream analyses
  
  
 **_pipe.sh**
 * Pipe scripts that take raw reads-> realigned bams for each line
-    * Uses `trimmomatic` `bwa` `samtools` `picard` and `GATK`
+    * Uses `trimmomatic/0.33` `bwa/0.7.12` `samtools/1.4.1` `picard/2.10.0` and `GATK/3.7`
 
 
 **SNP_calling.sh**
 * A script calling SNPs on all lines from _*pipe.sh script into one vcf file
-    * Uses `GATK`
+    * Uses `GATK/3.7`
 
 
 **quality_filter.sh** 
 * A script taking only SNP calls above a certain quality
-    * Uses `python`
+    * Uses `python2`
 
 
 **SNPs_byline.sh**
 * A script separating unique and shared SNPs into new files
-    * Uses `python`
+    * Uses `python2`
 
 
 **SNPs_bychrom.sh** 
 * A script separating SNPs by chromosome for each line
-    * Uses `python`
+    * Uses `python2`
     * It also generates files for pos-only information which is useful for downstream SNP position density plots
 
 **NumSNPs_perchrom.R** 
@@ -56,5 +56,5 @@ Analyzing thaliana data for mutant site identification
 
 **snpEff.sh**
 * A script annotating all variants of a given vcf file
-   * Uses `snpEff`
+   * Uses `snpEff/4.3r`
     

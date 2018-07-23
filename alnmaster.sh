@@ -15,7 +15,7 @@
 ##	##Align + Sam -> Bam Script##   ##
 ## Need:
 ##Trimmed fwd and reverse files (with path) as $1 and $2
-NAME = $(basename "$1" | cut -d_ -f1)
+NAME=$(basename "$1" | cut -d_ -f1)
 
 #basename takes away path and file extension
 #then pipe into cut to take away everything after the _ delimiter; but only of the first line of the file

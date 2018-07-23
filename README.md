@@ -9,13 +9,18 @@ Analyzing thaliana data for mutant site identification
     * These are necessary for both `bwa` and `GATK` downstream analyses
  
  
-***_pipe.sh**
-* Pipe scripts that take raw reads-> realigned bams for each line
-    * Uses `trimmomatic/0.33` `bwa/0.7.12` `samtools/1.4.1` `picard/2.10.0` and `GATK/3.7`
+***trimmaster.sh**
+* Take raw reads-> trimmed reads
+    * Uses `trimmomatic/0.33` 
 
 
-**SNP_calling.sh**
-* A script calling SNPs on all lines from *_pipe.sh script into one vcf file
+***alnmaster.sh**
+* Take trimmed reads-> aligns, removes duplicates, and realigns around indels
+    * Uses `bwa/0.7.12` `samtools/1.4.1` `picard/2.10.0` and `GATK/3.7`
+
+
+**SNPcaller.sh**
+* A script calling SNPs on lines from alnmaster.sh script into one vcf file
     * Uses `GATK/3.7`
 
 

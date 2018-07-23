@@ -9,12 +9,12 @@ Analyzing thaliana data for mutant site identification
     * These are necessary for both `bwa` and `GATK` downstream analyses
  
  
-***trimmaster.sh**
+**trimmaster.sh**
 * Take raw reads-> trimmed reads
     * Uses `trimmomatic/0.33` 
 
 
-***alnmaster.sh**
+**alnmaster.sh**
 * Take trimmed reads-> aligns, removes duplicates, and realigns around indels
     * Uses `bwa/0.7.12` `samtools/1.4.1` `picard/2.10.0` and `GATK/3.7`
 

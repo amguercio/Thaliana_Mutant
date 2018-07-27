@@ -43,16 +43,8 @@ Analyzing thaliana data for mutant site identification
 * A script plotting number of SNPs per chromosome for each line
     * Uses `R`
     
-**SNP_densityplotsColCRZ.R** 
+**SNPdensity_thehardway.R** 
 * A script plotting the density of SNPs in bins per chromosome for Col, CRZ, and Col CRZ shared
-   * Uses `R`
-   
-**SNP_densityplotsColWS022.R** 
-* A script plotting the density of SNPs in bins per chromosome for Col, WS02, and WS2
-   * Uses `R`
-   
-**SNP_densityplotsColWSShared.R** 
-* A script plotting the density of SNPs in bins per chromosome for Col, Col WS02 shared, and Col WS2 shared
    * Uses `R`
 
 **Venn_diagrams.R**
